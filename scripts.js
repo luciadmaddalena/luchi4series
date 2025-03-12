@@ -37,7 +37,7 @@ function showSlider(type){
         carouselDom.classList.remove('prev');
     }, timeRunning)
 
-    clearTumeout(runAutoRun);
+    clearTimeout(runAutoRun);
     runAutoRun = setTimeout(()=>{
         nextDom.click();
     }, timeAutoNext);
