@@ -7,7 +7,7 @@ body{
 }
 a{
     text-decoration: none;
-    color: #f5f5f5;
+    
 }
 header{
     width: 1140px;
@@ -21,6 +21,69 @@ header{
 }
 header a {
     margin-right: 40px;
+}
+
+
+.encabezado{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.div{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+    z-index: 1;
+}
+
+.text{
+    margin: 10% 5%;
+    padding: 2%;
+    height: 100vh;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: bold;
+    text-align: justify;
+    position: absolute;
+    align-items: center;
+    z-index: 2;
+    overflow: auto;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .3);
+}
+.h2{
+    font-size: 5rem;
+    margin: 5% 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 /*carousel*/
@@ -180,10 +243,10 @@ margin-top: 20px;
     animation-delay: 1.4s;
 }
 .carousel .list .item:nth-child(1) .des{
-    animation-delay: 1.6s;
+    animation-delay: 1.5s;
 }
 .carousel .list .item:nth-child(1) .buttons{
-    animation-delay: 1.8s;
+    animation-delay: 1.6s;
 }
 
 /*effect next click*/
@@ -194,7 +257,7 @@ margin-top: 20px;
     left: 50%;
     bottom: 50px;
     border-radius: 20px;
-    animation: showImage 0.5s linear 1 forwards;
+    animation: showImage 0.3s linear 1 forwards;
 }
 @keyframes showImage{
     to{
@@ -208,7 +271,7 @@ margin-top: 20px;
 .carousel.next .thumbnail .item:nth-child(1){
     width: 0;
     overflow: hidden;
-    animation: showThumbnail .5s linear 1 forwards;
+    animation: showThumbnail .3s linear 1 forwards;
 }
 @keyframes showThumbnail{
     to{
@@ -217,7 +280,7 @@ margin-top: 20px;
 }
 .carousel.next .thumbnail{
     transform: translateX(150px);
-    animation: transformThumbnail .5s linear 1 forwards;
+    animation: transformThumbnail .3s linear 1 forwards;
 }
 @keyframes transformThumbnail{
     to{
@@ -233,7 +296,7 @@ margin-top: 20px;
     position: absolute;
     bottom: 0;
     left: 0;
-    animation: outImage 0.5s linear 1 forwards;
+    animation: outImage 0.3s linear 1 forwards;
 }
 @keyframes outImage{
     to{
@@ -248,7 +311,7 @@ margin-top: 20px;
     width: 0;
     overflow: hidden;
     opacity: 0;
-    animation: showThumbnail 0.5s linear forwards;
+    animation: showThumbnail 0.3s linear forwards;
 }
 .carousel.prev .list .item:nth-child(2) .author,
 .carousel.prev .list .item:nth-child(2) .title,
@@ -282,7 +345,7 @@ margin-top: 20px;
 .carousel.next .time,
 .carousel.prev .time{
     width: 100%;
-    animation: timeRunning 2s linear 1 forwards;
+    animation: timeRunning 1s linear 1 forwards;
 }
 @keyframes timeRunning{
     to{
