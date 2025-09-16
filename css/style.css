@@ -67,7 +67,7 @@ header a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 10% 5%;
+    margin: 10% 5% 15% 5%;
     padding: 2%;
     height: 100vh;
     font-size: 1rem;
