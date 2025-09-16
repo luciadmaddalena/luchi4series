@@ -38,6 +38,7 @@ Todo el diseño es **responsive**, adaptándose tanto a móviles como a tablets 
 ---
 
 ## 📁 Estructura del proyecto
+```
 ├── index.html # Página principal con carrusel
 ├── scripts.js # Funciones generales y logica del carrusel
 ├── css/
@@ -49,7 +50,7 @@ Todo el diseño es **responsive**, adaptándose tanto a móviles como a tablets 
 │ ├── imgg/ 
 │ └── 1got.jpg/ # Posters de cada serie
 └── README.md
-
+```
 ---
 ##🚀 Demo
 
